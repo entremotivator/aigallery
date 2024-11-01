@@ -10,6 +10,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -15, y: 2, z: -19.5 },
     rotationY: 0,
+    link: 'https://example.com/superagi'
   },
   {
     wall: 'Front',
@@ -20,6 +21,7 @@ const paintings = [
     year: 'Developed in 2022',
     position: { x: -5, y: 2, z: -19.5 },
     rotationY: 0,
+    link: 'https://example.com/assistantapi'
   },
   {
     wall: 'Front',
@@ -30,6 +32,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 5, y: 2, z: -19.5 },
     rotationY: 0,
+    link: 'https://example.com/autogpt'
   },
   {
     wall: 'Front',
@@ -40,6 +43,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 15, y: 2, z: -19.5 },
     rotationY: 0,
+    link: 'https://example.com/langflow'
   },
 
   // Back Wall
@@ -52,6 +56,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -15, y: 2, z: 19.5 },
     rotationY: Math.PI,
+    link: 'https://example.com/openinterpreter'
   },
   {
     wall: 'Back',
@@ -62,6 +67,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -5, y: 2, z: 19.5 },
     rotationY: Math.PI,
+    link: 'https://example.com/mem0'
   },
   {
     wall: 'Back',
@@ -72,6 +78,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 5, y: 2, z: 19.5 },
     rotationY: Math.PI,
+    link: 'https://example.com/multion'
   },
   {
     wall: 'Back',
@@ -82,6 +89,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 15, y: 2, z: 19.5 },
     rotationY: Math.PI,
+    link: 'https://example.com/selfoperationcomputer'
   },
 
   // Left Wall
@@ -94,6 +102,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: -15 },
     rotationY: Math.PI / 2,
+    link: 'https://example.com/crewai'
   },
   {
     wall: 'Left',
@@ -104,6 +113,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: -5 },
     rotationY: Math.PI / 2,
+    link: 'https://example.com/autogen'
   },
   {
     wall: 'Left',
@@ -114,6 +124,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: 5 },
     rotationY: Math.PI / 2,
+    link: 'https://example.com/chatdev'
   },
   {
     wall: 'Left',
@@ -124,6 +135,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: 15 },
     rotationY: Math.PI / 2,
+    link: 'https://example.com/openhomeassistant'
   },
 
   // Right Wall
@@ -136,6 +148,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: -15 },
     rotationY: -Math.PI / 2,
+    link: 'https://example.com/babyagi'
   },
   {
     wall: 'Right',
@@ -146,6 +159,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: -5 },
     rotationY: -Math.PI / 2,
+    link: 'https://example.com/opengpts'
   },
   {
     wall: 'Right',
@@ -156,6 +170,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: 5 },
     rotationY: -Math.PI / 2,
+    link: 'https://example.com/langgraph'
   },
   {
     wall: 'Right',
@@ -166,6 +181,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: 15 },
     rotationY: -Math.PI / 2,
+    link: 'https://example.com/langflow'
   },
 ];
 
@@ -181,6 +197,13 @@ export const paintingData = paintings.map(painting => ({
     artist: painting.artist,
     description: painting.description,
     year: painting.year,
-    link: 'https://entremotivator.com/',
+    link: painting.link,
   },
+  cs3d: {
+    // Custom attributes for CS3D framework, replace with actual CS3D properties as needed
+    texture: painting.imgSrc,
+    dimensions: { width: 5, height: 3 },
+    position: painting.position,
+    rotation: { y: painting.rotationY }
+  }
 }));

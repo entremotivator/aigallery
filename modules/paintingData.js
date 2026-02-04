@@ -10,7 +10,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -15, y: 2, z: -19.5 },
     rotationY: 0,
-    link: 'https://example.com/superagi'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Front',
@@ -21,7 +21,7 @@ const paintings = [
     year: 'Developed in 2022',
     position: { x: -5, y: 2, z: -19.5 },
     rotationY: 0,
-    link: 'https://example.com/assistantapi'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Front',
@@ -32,7 +32,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 5, y: 2, z: -19.5 },
     rotationY: 0,
-    link: 'https://example.com/autogpt'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Front',
@@ -43,7 +43,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 15, y: 2, z: -19.5 },
     rotationY: 0,
-    link: 'https://example.com/langflow'
+    link: 'https://EntreMotivator.com/'
   },
 
   // Back Wall
@@ -56,7 +56,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -15, y: 2, z: 19.5 },
     rotationY: Math.PI,
-    link: 'https://example.com/openinterpreter'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Back',
@@ -67,7 +67,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -5, y: 2, z: 19.5 },
     rotationY: Math.PI,
-    link: 'https://example.com/mem0'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Back',
@@ -78,7 +78,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 5, y: 2, z: 19.5 },
     rotationY: Math.PI,
-    link: 'https://example.com/multion'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Back',
@@ -89,7 +89,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 15, y: 2, z: 19.5 },
     rotationY: Math.PI,
-    link: 'https://example.com/selfoperationcomputer'
+    link: 'https://EntreMotivator.com/'
   },
 
   // Left Wall
@@ -102,7 +102,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: -15 },
     rotationY: Math.PI / 2,
-    link: 'https://example.com/crewai'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Left',
@@ -113,7 +113,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: -5 },
     rotationY: Math.PI / 2,
-    link: 'https://example.com/autogen'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Left',
@@ -124,7 +124,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: 5 },
     rotationY: Math.PI / 2,
-    link: 'https://example.com/chatdev'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Left',
@@ -135,7 +135,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: -19.5, y: 2, z: 15 },
     rotationY: Math.PI / 2,
-    link: 'https://example.com/openhomeassistant'
+    link: 'https://EntreMotivator.com/'
   },
 
   // Right Wall
@@ -148,7 +148,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: -15 },
     rotationY: -Math.PI / 2,
-    link: 'https://example.com/babyagi'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Right',
@@ -159,7 +159,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: -5 },
     rotationY: -Math.PI / 2,
-    link: 'https://example.com/opengpts'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Right',
@@ -170,7 +170,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: 5 },
     rotationY: -Math.PI / 2,
-    link: 'https://example.com/langgraph'
+    link: 'https://EntreMotivator.com/'
   },
   {
     wall: 'Right',
@@ -181,7 +181,7 @@ const paintings = [
     year: 'Developed in 2023',
     position: { x: 19.5, y: 2, z: 15 },
     rotationY: -Math.PI / 2,
-    link: 'https://example.com/langflow'
+    link: 'https://EntreMotivator.com/'
   },
 ];
 
@@ -200,10 +200,10 @@ export const paintingData = paintings.map(painting => ({
     link: painting.link,
   },
   cs3d: {
-    // Custom attributes for CS3D framework, replace with actual CS3D properties as needed
     texture: painting.imgSrc,
     dimensions: { width: 5, height: 3 },
     position: painting.position,
     rotation: { y: painting.rotationY }
   }
 }));
+
